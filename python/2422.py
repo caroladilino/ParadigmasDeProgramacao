@@ -2,9 +2,6 @@
 
 N = int(input())
 casas=[]
-a=0
-b=0
-
 
 for i in range (N):
     casas.append(int(input()))
