@@ -1,11 +1,4 @@
---import PopulaLista
-
-populaLista :: Int -> IO [Int]
-populaLista 0 = return []
-populaLista n = do
-    input <- readLn
-    rest <- populaLista (n-1)
-    return (input : rest)
+import PopulaLista
 
 
 menor :: [Int] -> Int
@@ -20,6 +13,6 @@ main = do
     n <- readLn
     lista <- populaLista n 
 
-    print(menor lista)
+    print (menor lista)
 
 
